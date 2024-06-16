@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShipKart Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* CSS for circular logo placeholder */
+        header img {
+            width: 80px; /* Adjust size as needed */
+            height: 80px;
+            border-radius: 50%; /* Makes the image circular */
+            margin-right: 20px; /* Adds spacing between logo and headline */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./img/sk-logo.jpg" alt="ShipKart Logo">
+        <h1>ShipKart</h1> <!-- Website headline -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+    <main>
+        <section class="products">
+            <article class="product">
+                <img src="./img/nike-shoes.jpg" alt="Nike Shoes">
+                <h2><a href="product.html?name=Nike Shoes&price=5000">Nike Shoes</a></h2>
+                <p>Price: ₹5000</p>
+                <button onclick="addToCart('Nike Shoes', 5000)">
+                    <i class="fas fa-shopping-cart"></i> Add to Cart
+                </button>
+            </article>
+            <article class="product">
+                <img src="./img/adidas-shoes.jpg" alt="Adidas Shoes">
+                <h2><a href="product.html?name=Adidas Shoes&price=4500">Adidas Shoes</a></h2>
+                <p>Price: ₹4500</p>
+                <button onclick="addToCart('Adidas Shoes', 4500)">
+                    <i class="fas fa-shopping-cart"></i> Add to Cart
+                </button>
+            </article>
+            <article class="product">
+                <img src="./img/rolex-watch.jpg" alt="Rolex Watch">
+                <h2><a href="product.html?name=Rolex Watch&price=150000">Rolex Watch</a></h2>
+                <p>Price: ₹150000</p>
+                <button onclick="addToCart('Rolex Watch', 150000)">
+                    <i class="fas fa-shopping-cart"></i> Add to Cart
+                </button>
+            </article>
+            <article class="product">
+                <img src="./img/titan-watch.jpg" alt="Titan Watch">
+                <h2><a href="product.html?name=Titan Watch&price=7000">Titan Watch</a></h2>
+                <p>Price: ₹7000</p>
+                <button onclick="addToCart('Titan Watch', 7000)">
+                    <i class="fas fa-shopping-cart"></i> Add to Cart
+                </button>
+            </article>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
