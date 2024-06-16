@@ -57,10 +57,23 @@ function removeFromCart(productName) {
 
 // Function to navigate to checkout page
 function goToCheckout() {
-    window.location.href = 'checkout.html'; // Redirect to checkout page
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    if (cart.length === 0) {
+        alert('Your cart is empty. Please add items to proceed to checkout.');
+        return;
+    }
+
+    // If cart is not empty, proceed to checkout page
+    window.location.href = 'checkout.html';
 }
+
+
 
 // Initialize cart display on page load
 document.addEventListener('DOMContentLoaded', () => {
     displayCartItems();
 });
+
+
+
